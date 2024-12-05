@@ -2,16 +2,16 @@
 
 #include <memory>
 #include <condition_variable>
-#include "holi-server/application.hpp"
+#include "holi/application.hpp"
 
-namespace holi_server
+namespace holi
 {
      class application_implementation : public application
      {
      public:
           std::condition_variable stop_condition;
 
-          application_implementation(); 
+          application_implementation();
 
           int run() override final;
           void stop() override final;
@@ -19,7 +19,7 @@ namespace holi_server
           static application& instance(void)
           {
                static auto instance = std::make_unique<application_implementation>();
-               
+
                return *instance;
           }
      };
