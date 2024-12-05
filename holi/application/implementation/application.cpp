@@ -1,12 +1,12 @@
-#include "holi-server/application/implementation/application.hpp"
+#include "holi/application/implementation/application.hpp"
 #include <mutex>
 #include <iostream>
 
-namespace holi_server
+namespace holi
 {
      application_implementation::application_implementation()
      {
-          // set version
+          this->version = 1.0;
      }
 
      int application_implementation::run()

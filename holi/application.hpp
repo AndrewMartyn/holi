@@ -1,10 +1,12 @@
-namespace holi_server
+namespace holi
 {
      class application
      {
      public:
+          size_t version;
+
           application() = default;
-          application(const application& obj) = delete; 
+          application(const application& obj) = delete;
           application(application& obj) = delete;
           application& operator=(const application&& obj) = delete;
           application& operator=(application&& obj) = delete;

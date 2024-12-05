@@ -1,6 +1,6 @@
 #include <iostream>
 #include <csignal>
-#include "holi-server/application/implementation/application.hpp"
+#include "holi/application/implementation/application.hpp"
 
 static void sigquit([[maybe_unused]] int sig)
 {
