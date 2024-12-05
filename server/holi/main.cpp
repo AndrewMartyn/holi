@@ -4,7 +4,7 @@
 
 static void sigquit([[maybe_unused]] int sig)
 {
-     holi_server::application_implementation::instance().stop();
+     holi::application_implementation::instance().stop();
 }
 
 int main (int argc, char* argv[])
@@ -12,5 +12,5 @@ int main (int argc, char* argv[])
      signal(SIGINT, sigquit);
      signal(SIGPIPE, SIG_IGN);
 
-     return holi_server::application_implementation::instance().run();
+     return holi::application_implementation::instance().run();
 }
