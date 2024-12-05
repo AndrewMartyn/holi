@@ -1,5 +1,0 @@
-/home/andrew/git/holi/build/CMakeFiles/edit_cache.dir
-/home/andrew/git/holi/build/CMakeFiles/rebuild_cache.dir
-/home/andrew/git/holi/build/holi-server/CMakeFiles/holi.dir
-/home/andrew/git/holi/build/holi-server/CMakeFiles/edit_cache.dir
-/home/andrew/git/holi/build/holi-server/CMakeFiles/rebuild_cache.dir

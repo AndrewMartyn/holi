@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/holi.dir/main.cpp.o CMakeFiles/holi.dir/application/implementation/application.cpp.o -o holi
