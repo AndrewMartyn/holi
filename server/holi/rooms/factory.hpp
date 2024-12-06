@@ -18,7 +18,7 @@ namespace holi
                factory& operator=(factory&& obj) = delete;
                virtual ~factory() = default;
 
-               virtual std::shared_ptr<room> create(const std::string& room_name) const = 0;
+               virtual std::shared_ptr<room> create(const std::string& name) const = 0;
           };
      };
 };

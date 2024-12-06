@@ -4,6 +4,9 @@ add_executable(
      main.cpp
 
      application/implementation/application.cpp
+
+     room.cpp
+     rooms/implementation/factory.cpp
 )
 
 target_include_directories(

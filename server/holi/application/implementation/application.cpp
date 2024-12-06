@@ -2,6 +2,8 @@
 #include <mutex>
 #include <iostream>
 
+#include "holi/rooms/implementation/factory.hpp"
+
 namespace holi
 {
      application_implementation::application_implementation()
@@ -12,6 +14,17 @@ namespace holi
      int application_implementation::run()
      {
           std::cout << "running\n";
+
+          // rooms
+          // auto rooms_dao = std::make_unique<rooms::dao_implementation>();
+          auto rooms_factory = std::make_unique<rooms::factory_implementation>();
+          // auto rooms_manager = std::make_unique<rooms::manager_implementation>();
+
+          auto room1 = rooms_factory->create("room 1");
+          auto room2 = rooms_factory->create("room 2");
+          auto room3 = rooms_factory->create("room 3");
+
+
           //////////////////////////////
           // wait for shutdown signal //
           //////////////////////////////
