@@ -11,7 +11,7 @@ namespace holi
 
      int application_implementation::run()
      {
-          std::cout << "run\n";
+          std::cout << "running\n";
           //////////////////////////////
           // wait for shutdown signal //
           //////////////////////////////
