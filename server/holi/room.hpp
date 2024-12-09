@@ -14,15 +14,8 @@ namespace holi
           mutable std::mutex mutex;
           size_t id;
           std::string name;
-          std::unordered_map<size_t, std::shared_ptr<holi::user>> users;
+          std::unordered_map<size_t, std::shared_ptr<user>> users;
 
-          room(const std::string& name);
-          virtual ~room();
-
-          virtual void join(std::shared_ptr<user>& user);
-          virtual void leave(size_t user_id);
-
-     private:
-          static size_t next_id;
+          room(size_t id);
      };
 };

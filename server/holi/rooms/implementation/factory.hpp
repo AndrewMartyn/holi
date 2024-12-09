@@ -16,7 +16,7 @@ namespace holi
                factory_implementation();
                ~factory_implementation();
 
-               std::shared_ptr<room> create(const std::string& name) const override final;
+               std::shared_ptr<room> create(size_t id) const override final;
           };
      };
 };

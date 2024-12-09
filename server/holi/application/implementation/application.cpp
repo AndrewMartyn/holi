@@ -3,6 +3,7 @@
 #include <iostream>
 
 #include "holi/rooms/implementation/factory.hpp"
+#include "holi/rooms/implementation/manager.hpp"
 
 namespace holi
 {
@@ -18,11 +19,13 @@ namespace holi
           // rooms
           // auto rooms_dao = std::make_unique<rooms::dao_implementation>();
           auto rooms_factory = std::make_unique<rooms::factory_implementation>();
-          // auto rooms_manager = std::make_unique<rooms::manager_implementation>();
+          auto rooms_manager = std::make_unique<rooms::manager_implementation>(
+               *rooms_factory
+          );
 
-          auto room1 = rooms_factory->create("room 1");
-          auto room2 = rooms_factory->create("room 2");
-          auto room3 = rooms_factory->create("room 3");
+          auto room1 = rooms_manager->create("room 1");
+          auto room2 = rooms_manager->create("room 2");
+          auto room3 = rooms_manager->create("room 3");
 
 
           //////////////////////////////

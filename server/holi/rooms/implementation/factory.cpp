@@ -13,9 +13,9 @@ namespace holi
           {
           }
 
-          std::shared_ptr<room> factory_implementation::create(const std::string& name) const
+          std::shared_ptr<room> factory_implementation::create(size_t id) const
           {
-               return std::make_shared<room>(name);
+               return std::make_shared<room>(id);
           }
      };
 };

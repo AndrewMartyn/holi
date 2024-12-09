@@ -7,10 +7,17 @@ add_executable(
 
      room.cpp
      rooms/implementation/factory.cpp
+     rooms/implementation/manager.cpp
 )
 
 target_include_directories(
      ${CMAKE_PROJECT_NAME}
 
      PUBLIC ${PROJECT_SOURCE_DIR}/
+)
+
+target_link_libraries(
+     ${CMAKE_PROJECT_NAME}
+
+     SQLite::SQLite3
 )
